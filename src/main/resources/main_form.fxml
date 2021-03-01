@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" focusTraversable="true" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.MainController">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="14.0" prefHeight="85.0" prefWidth="867.0" style="-fx-background-color: #ffffff; -fx-border-color: #e0e0e0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txt_email" layoutX="87.0" layoutY="16.0" prefHeight="23.0" prefWidth="196.0" />
+            <TextField fx:id="txt_key" layoutX="87.0" layoutY="47.0" prefHeight="23.0" prefWidth="196.0" />
+            <CheckBox fx:id="cbx_remember" layoutX="296.0" layoutY="51.0" mnemonicParsing="false" onAction="#btn_remember_click" text="记住" />
+            <Button fx:id="btn_search" layoutX="589.0" layoutY="8.0" mnemonicParsing="false" onAction="#btn_search_click" prefHeight="41.0" prefWidth="87.0" text="搜索" AnchorPane.rightAnchor="202.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cancel" layoutX="683.0" layoutY="8.0" mnemonicParsing="false" onAction="#btn_cancel_click" prefHeight="41.0" prefWidth="87.0" text="取消" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_export" layoutX="777.0" layoutY="8.0" mnemonicParsing="false" onAction="#btn_export_click" prefHeight="41.0" prefWidth="87.0" text="导出" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="24.0" layoutY="51.0" text="API Key" textFill="#423c42" />
+            <Label layoutX="24.0" layoutY="20.0" text="账号邮箱" textFill="#423c42" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="97.0" prefHeight="415.0" prefWidth="900.0" style="-fx-background-color: #ededed;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+         <children>
+            <TextField fx:id="txt_one" layoutX="14.0" layoutY="14.0" prefHeight="23.0" prefWidth="137.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <Button fx:id="btn_add_one" layoutX="160.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_add_one_click" prefHeight="23.0" prefWidth="36.0" text="+" />
+            <Button fx:id="btn_add_more" layoutX="14.0" layoutY="44.0" mnemonicParsing="false" onAction="#btn_add_more_click" prefHeight="23.0" prefWidth="87.0" text="批量添加" />
+            <Button fx:id="btn_clear" layoutX="110.0" layoutY="44.0" mnemonicParsing="false" onAction="#btn_clear_click" prefHeight="23.0" prefWidth="87.0" text="全部清空" />
+            <ListView fx:id="lv_target" layoutX="14.0" layoutY="75.0" prefHeight="302.0" prefWidth="185.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="75.0" />
+            <TableView fx:id="tb_result" layoutX="207.0" layoutY="14.0" prefHeight="386.0" prefWidth="681.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="14.0" />
+            <ProgressBar fx:id="progress_bar" layoutX="14.0" layoutY="383.0" prefHeight="18.0" prefWidth="185.0" progress="0.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
