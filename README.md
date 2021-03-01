@@ -9,6 +9,5 @@
 * 自动分页，每页500条，最大10000条（根据Fofa的会员等级会有所不同）
 * 支持导出scv文件
 
-![](http://qnupload.wuyinchun.cn/github/fofa.jpg)
-
+![](http://qnupload.wuyinchun.cn/github/fofa2.jpg)
 
